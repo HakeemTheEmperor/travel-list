@@ -32,8 +32,8 @@ h1 {
   font-size: 8rem;
   text-transform: uppercase;
   font-weight: 400;
-  word-spacing: 30px;
-  letter-spacing: -5px;
+  word-spacing: 3rem;
+  letter-spacing: -0.5rem;
   padding: 2.4rem 0;
 }
 
@@ -109,6 +109,12 @@ input {
   gap: 1.2rem;
 }
 
+.form__data {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
@@ -129,4 +135,16 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+
+  .add-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
